@@ -1,0 +1,71 @@
+\documentclass[12pt]{tipoMTIC}
+\usepackage{amssymb,amsmath,alltt,amsthm}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{setspace}
+\usepackage{epsfig}
+\usepackage[numbers]{natbib}
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage[titletoc]{appendix}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lscape} % pauete para cambiar la orientacion de una pagina
+%pagebackref=true
+
+\input{thesinput.tex}
+
+% Se puede cambiar los siguientes parametros para modificar el acomodo del texto
+\geometry{lmargin=2.5cm,rmargin=2.5cm,tmargin=3cm,bmargin=3cm}
+\parskip= 6pt
+
+\includeonly{dedicatoria, aceptacion, agradecimientos, resumen, capitulo1, capitulo2, metodologia, capitulo 4, capitulo5, capitulo6, anexos}
+\doublespacing
+
+\begin{document}
+%\renewcommand{\listtablename}{Índice de tablas} 
+%\renewcommand{\tablename}{Tabla}  
+%\renewcommand{\lstlistingname}{Listado}
+%\pagenumbering{Roman} \setcounter{page}{1}
+
+%\hypersetup{pdfborder={0 0 0},pagebackref=true}
+
+\input{portada}
+\include{dedicatoria}
+\include{aceptacion}
+\include{agradecimientos}
+\include{resumen}
+\tableofcontents
+%\listoffigures
+%\listoftables
+% \pagenumbering{arabic} \setcounter{page}{1}
+\include{capitulo1}% introduccion
+%\pagenumbering{arabic} \setcounter{page}{1}
+\include{capitulo2} % 
+%\pagenumbering{arabic} \setcounter{page}{1}
+\include{metodologia} % 
+%\pagenumbering{arabic} \setcounter{page}{1}
+%\include{capitulo3} % 
+%\pagenumbering{arabic} \setcounter{page}{1}
+\include{capitulo4} % 
+%\pagenumbering{arabic} \setcounter{page}{1}
+\include{capitulo5} % 
+%\pagenumbering{arabic} \setcounter{page}{1}
+\include{capitulo6} %
+
+
+  
+%\bibliography{biblio}
+%\bibliographystyle{unsrt}
+
+%\pagenumbering{roman} \setcounter{page}{1}
+%\include{apendicea} %
+%\pagenumbering{roman} \setcounter{page}{1}
+%\include{apendiceb} %
+
+
+\include{anexos}
+\end{document}
